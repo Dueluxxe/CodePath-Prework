@@ -1,0 +1,108 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.5;
+  background-color: slategrey;
+  color: white;
+}
+h1 {
+  font-family: verdana, arial, sans-serif;
+}
+button {
+  padding: 10px;
+  border-radius: 10px;
+}
+#gameButtonArea > button {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+}
+.hidden {
+  display: none;
+}
+/*Default color of button0*/
+#button0 {
+  position: absolute;
+  border-radius: 50%;
+  left: 25%;
+  bottom: -25%;
+}
+/*Change color when pressed for button0*/
+#button0:active,
+#button0.lit {
+  background: lightgrey;
+}
+/*Default color of button1*/
+#button1 {
+  background: lightgreen;
+  /*Added features*/
+  width: 300px;
+  height: 300px;
+  border-radius: 300px 0 0 0;
+}
+/*Change color when pressed for button1*/
+#button1:active,
+#button1.lit {
+  background: green;
+}
+/*Default color of button2*/
+#button2 {
+  background: lightblue;
+  /*Added features*/
+  width: 300px;
+  height: 300px;
+  border-radius: 0 300px 0 0;
+}
+/*Change color when pressed for button2*/
+#button2:active,
+#button2.lit {
+  background: blue;
+}
+/*Default color of button3*/
+#button3 {
+  background: pink;
+  /*Added features*/
+  width: 300px;
+  height: 300px;
+  border-radius: 0 0 0 300px;
+}
+/*Change color when pressed for button3*/
+#button3:active,
+#button3.lit {
+  background: red;
+}
+/*Default color of button4*/
+#button4 {
+  background: lightyellow;
+  /*Added features*/
+  width: 300px;
+  height: 300px;
+  border-radius: 0 0 300px 0;
+}
+/*Change color when pressed for button4*/
+#button4:active,
+#button4.lit {
+  background: yellow;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
